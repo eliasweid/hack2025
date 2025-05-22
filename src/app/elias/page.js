@@ -6,6 +6,7 @@ import OnboardingProgress from '../../../Components/OnboardingProgress';
 import OnboardingStep from '../../../Components/OnboardingStep';
 import Overview from '../../../Components/Overview';
 import TitleText from '../../../Components/TitelText';
+import _public from '../../../public';
 
 export default function elias() {
     const employee = {
@@ -15,7 +16,7 @@ export default function elias() {
         department: 'IT',
         isConsultant: false,
         progress: 60,
-        imageUrl: '/elias.png',
+        imageUrl: _public.elias,
         steps: [
             { label: 'Konto skapat', done: true },
             { label: 'Dokument signerat', done: true },

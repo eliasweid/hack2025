@@ -16,7 +16,6 @@ export default function HeaderBoss() {
       
       <nav className={styles.nav}>
         <Link href="/">Min Pesonal</Link>
-        <Link href="/newemp">Ny Onboarding</Link>
         <Link href="/templates">Mallar</Link>
         <Link href="/followup">Uppföljning</Link>
       </nav>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./Overview.module.css";
+import _public from "../public";
+
 
 export default function Overview({ employee }) {
   const {
@@ -16,7 +18,7 @@ export default function Overview({ employee }) {
     <div className={styles.container}>
       <div className={styles.left}>
         <Image
-          src={imageUrl || "/profile.jpg"}
+          src={imageUrl || _public.profile}
           alt="Profilbild"
           width={120}
           height={120}

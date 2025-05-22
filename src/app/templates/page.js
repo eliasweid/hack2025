@@ -5,11 +5,17 @@ import styles from "./Templates.module.css";
 
 export default function Teamplates() {
     return (
-      <main>
-        <Link href="/newtmp"> <button className={styles.nbutton}>Skapa ny mall</button></Link>
+      <div className={styles.page}>
+      <main className={styles.main}>
+        
 
-        <div >
-            <TitleText text="Templates" />
+      <div className={styles.titlebox}>
+      <h1 className={styles.title}>Mina mallar</h1>
+      <Link href="/newtmp" className={styles.nbutton}>Ny Mall</Link>
+      </div>
+
+
+
           <Teamplate title="Java standard" text="testar" link="/javatemp" />
           <Teamplate title="Java senior" text="testar" />
           <Teamplate title="Java confidenciell" text="testar" />
@@ -19,7 +25,8 @@ export default function Teamplates() {
           <Teamplate title="Release-Dev" text="testar" />
           <Teamplate title="APO-Standard" text="testar" />
 
-        </div>
+        
       </main>
+       </div>
     );
   }

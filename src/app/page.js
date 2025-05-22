@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProfileCard from "../../Components/ProfileCard";
 import HeaderBoss from "../../Components/HeaderBoss";
 import _public from "../../public";
+import TitleText from "../../Components/TitelText";
 
 
 export default function Home() {
@@ -11,6 +12,10 @@ export default function Home() {
     <div className={styles.page}>
       
       <main className={styles.main}>
+      <div className={styles.titlebox}>
+      <h1 className={styles.title}>Min personal</h1>
+      <Link href="newemp" className={styles.nbutton}>Ny Onboarding</Link>
+      </div>
        <ProfileCard name="Elias Weid" progress={75} avatar = {_public.elias} />
        <ProfileCard name="Erik Stolpe" progress={43} avatar = {_public.erik}/>
        <ProfileCard name="Ella Bernsfelt" progress={90} avatar= {_public.ella}/>
@@ -22,48 +27,7 @@ export default function Home() {
 
       </main>
       <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        
       </footer>
     </div>
   );
