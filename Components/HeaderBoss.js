@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './HeaderBoss.module.css';
+import _public from '../public';
 
 export default function HeaderBoss() {
   return (
@@ -8,7 +9,7 @@ export default function HeaderBoss() {
       
       <Link href="/">
       <div className={styles.logo}>
-        <Image src="/logo.png" alt="Logotyp" width={300} height={33} />
+        <Image src={_public.logo} alt="Logotyp" width={300} height={33} />
       </div>
       </Link>
 
@@ -23,7 +24,7 @@ export default function HeaderBoss() {
       
       <div className={styles.profile}>
         <Image
-          src="/profile.png"
+          src={_public.profile}
           alt="Profil"
           width={50}
           height={50}
