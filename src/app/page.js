@@ -10,7 +10,7 @@ export default function Home() {
     <div className={styles.page}>
       
       <main className={styles.main}>
-       <ProfileCard name="Elias Weid" progress={75} avatar = "/elias.png" />
+       <ProfileCard name="Elias Weid" progress={75} avatar = "/public/elias.png" />
        <ProfileCard name="Erik Stolpe" progress={43} avatar = "/erik.png"/>
        <ProfileCard name="Ella Bernsfelt" progress={90} avatar="/ella.png"/>
        <ProfileCard name="Elliot Storm" progress={10} avatar = "/profile.png"/>
