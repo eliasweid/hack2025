@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import ProfileCard from "../../Components/ProfileCard";
 import HeaderBoss from "../../Components/HeaderBoss";
+import _public from "../../public";
 
 
 export default function Home() {
@@ -10,8 +11,8 @@ export default function Home() {
     <div className={styles.page}>
       
       <main className={styles.main}>
-       <ProfileCard name="Elias Weid" progress={75} avatar = "/elias.png" />
-       <ProfileCard name="Erik Stolpe" progress={43} avatar = "/erik.png"/>
+       <ProfileCard name="Elias Weid" progress={75} avatar = {_public.elias} />
+       <ProfileCard name="Erik Stolpe" progress={43} avatar = {_public.erik}/>
        <ProfileCard name="Ella Bernsfelt" progress={90} avatar="/ella.png"/>
        <ProfileCard name="Elliot Storm" progress={10} avatar = "/profile.png"/>
        <ProfileCard name="Love Broberg" progress={75} />

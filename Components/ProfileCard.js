@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './ProfileCard.module.css';
 import Link from 'next/link';
+import _public from '../public';
 
 export default function ProfileCard({ name = "John Doe", progress = 75, avatar = "/elias.png" }, link = "/elias") {
   return (
