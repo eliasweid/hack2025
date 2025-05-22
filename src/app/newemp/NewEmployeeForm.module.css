@@ -36,32 +36,29 @@
     color: black;
   }
   
-  .checkbox {
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    color: #444;
-  }
-  
   .submitButton {
-    background-color: #4caf50;
-    color: white;
+    background-color: #005fa5;
+    color: #fff;
     padding: 12px;
     border: none;
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    
+    padding-inline: 15px;
   }
   
   .submitButton:hover {
-    background-color: #3e9f3e;
+    background-color: #23506e;
   }
   
   .taskButtonWrapper {
     margin-top: 8px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
+    margin-left: 0px;
   }
 
   .taskButtonWrapper {
@@ -69,23 +66,48 @@
   }
   
   .smallButton {
-    font-size: 0.875rem;
-    padding: 4px 8px;
-    background-color: #4a90e2;
-    color: white;
+    background-color: #005fa5;
+    color: #fff;
+    padding: 12px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    
+    padding-inline: 15px;
   }
   
   .smallButton:hover {
-    background-color: #3a78c2;
+    background-color: #23506e;
+  }
+  .templateList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
   }
   
-  .templateList {
-    margin-top: 8px;
-    list-style-type: disc;
-    padding-left: 20px;
+  .templateList li {
+    padding: 4px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
     color: #333;
   }
   
+  /* Anpassad checkbox */
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2563eb;
+  }

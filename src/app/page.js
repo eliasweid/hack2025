@@ -20,8 +20,7 @@ export default function Home() {
        <ProfileCard name="Erik Stolpe" progress={43} avatar = {_public.erik}/>
        <ProfileCard name="Ella Bernsfelt" progress={90} avatar= {_public.ella}/>
        <ProfileCard name="Elliot Storm" progress={10} avatar = {_public.profile}/>
-       <ProfileCard name="Love Broberg" progress={75} />
-       <ProfileCard name="Johan Röden" progress={100} />
+       <ProfileCard name="Johan Röden" progress={100} avatar={_public.johan}/>
 
        
 

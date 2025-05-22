@@ -5,22 +5,45 @@ import styles from './newtemp.module.css';
 
 export default function NewEmployeeForm() {
   const [name, setName] = useState('');
+
   const [permissionInput, setPermissionInput] = useState('');
   const [permissions, setPermissions] = useState([]);
-  const [taskInput, setTaskInput] = useState('');
+
+  const [taskTitle, setTaskTitle] = useState('');
+  const [taskSubtitle, setTaskSubtitle] = useState('');
+  const [subTaskInput, setSubTaskInput] = useState('');
+  const [subTasks, setSubTasks] = useState([]);
+
   const [tasks, setTasks] = useState([]);
 
   const handleAddPermission = () => {
-    if (permissionInput.trim() !== '') {
+    if (permissionInput.trim()) {
       setPermissions([...permissions, permissionInput.trim()]);
       setPermissionInput('');
     }
   };
 
+  const handleAddSubTask = () => {
+    if (subTaskInput.trim()) {
+      setSubTasks([...subTasks, subTaskInput.trim()]);
+      setSubTaskInput('');
+    }
+  };
+
   const handleAddTask = () => {
-    if (taskInput.trim() !== '') {
-      setTasks([...tasks, taskInput.trim()]);
-      setTaskInput('');
+    if (taskTitle.trim() && subTasks.length > 0) {
+      const newTask = {
+        title: taskTitle.trim(),
+        subtitle: taskSubtitle.trim(),
+        subTasks,
+      };
+      setTasks([...tasks, newTask]);
+
+      // Reset fields
+      setTaskTitle('');
+      setTaskSubtitle('');
+      setSubTaskInput('');
+      setSubTasks([]);
     }
   };
 
@@ -68,7 +91,7 @@ export default function NewEmployeeForm() {
               Lägg till
             </button>
           </div>
-          <ul className={styles.list}>
+          <ul className={styles.templateList}>
             {permissions.map((perm, index) => (
               <li key={index}>{perm}</li>
             ))}
@@ -76,32 +99,78 @@ export default function NewEmployeeForm() {
         </label>
 
         <label className={styles.formLabel}>
-  Tasks:
-  <input
-    type="text"
-    value={taskInput}
-    onChange={(e) => setTaskInput(e.target.value)}
-    className={styles.inputField}
-    placeholder="Skriv task..."
-  />
-  <div className={styles.taskButtonWrapper}>
-    <button
-      type="button"
-      onClick={handleAddTask}
-      className={styles.smallButton}
-    >
-      Lägg till
-    </button>
-  </div>
-  <ul className={styles.list}>
-    {tasks.map((task, index) => (
-      <li key={index}>{task}</li>
-    ))}
-  </ul>
-</label>
+          Taskrubrik:
+          <input
+            type="text"
+            value={taskTitle}
+            onChange={(e) => setTaskTitle(e.target.value)}
+            className={styles.inputField}
+            placeholder="Rubrik..."
+          />
+        </label>
 
+        <label className={styles.formLabel}>
+          Underrubrik:
+          <input
+            type="text"
+            value={taskSubtitle}
+            onChange={(e) => setTaskSubtitle(e.target.value)}
+            className={styles.inputField}
+            placeholder="Underrubrik..."
+          />
+        </label>
 
-        <button type="submit" className={styles.submitButton}>Skapa mall</button>
+        <label className={styles.formLabel}>
+          Sub-task:
+          <div className={styles.subTaskWrapper}>
+            <input
+              type="text"
+              value={subTaskInput}
+              onChange={(e) => setSubTaskInput(e.target.value)}
+              className={styles.inputField}
+              placeholder="Lägg till en sub-task..."
+            />
+            <button type="button" onClick={handleAddSubTask} className={styles.smallButton}>
+              Lägg till
+            </button>
+          </div>
+          <ul className={styles.templateList}>
+            {subTasks.map((sub, index) => (
+              <li key={index}>{sub}</li>
+            ))}
+          </ul>
+        </label>
+
+        <div className={styles.taskButtonWrapper}>
+          <button
+            type="button"
+            onClick={handleAddTask}
+            className={styles.smallButton}
+          >
+            Lägg till Task
+          </button>
+        </div>
+
+        {tasks.length > 0 && (
+          <div className={styles.taskPreview}>
+            <h3>Tasks</h3>
+            {tasks.map((task, index) => (
+              <div key={index} className={styles.taskCard}>
+                <h4>{task.title}</h4>
+                <p>{task.subtitle}</p>
+                <ul>
+                  {task.subTasks.map((sub, idx) => (
+                    <li key={idx}>{sub}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <button type="submit" className={styles.submitButton}>
+          Skapa mall
+        </button>
       </form>
     </div>
   );

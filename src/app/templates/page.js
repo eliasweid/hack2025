@@ -16,14 +16,13 @@ export default function Teamplates() {
 
 
 
-          <Teamplate title="Java standard" text="testar" link="/javatemp" />
-          <Teamplate title="Java senior" text="testar" />
-          <Teamplate title="Java confidenciell" text="testar" />
-          <Teamplate title="COBOL" text="testar" />
-          <Teamplate title="Jira-Basic" text="testar" />
-          <Teamplate title="Test-Dev" text="testar" />
-          <Teamplate title="Release-Dev" text="testar" />
-          <Teamplate title="APO-Standard" text="testar" />
+          <Teamplate title="Vi är Handelsbanken" text="Handelsbanken standard intro" link="/javatemp" />
+          <Teamplate title="HTA Avdelningsinfo" text="Introduktion till HTA" />
+          <Teamplate title="Säkerhetsutbildning" text="Generell säkerhetsutbildning" />
+          <Teamplate title="Java Standard" text="Standard för nya java utvecklare" link="/javatemp"/>
+          <Teamplate title="SHB Intern" text="Intro vid internt rekrytering" />
+          <Teamplate title="Java Senior" text="Onboarding för seniora utvecklare" />
+          <Teamplate title="Team Intro - K2" text="Välkommen till K2" />
 
         
       </main>

@@ -1,0 +1,32 @@
+.title{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    color: black;
+    margin-left: 10vw;
+    margin-top: 15px;
+}
+
+
+.nbutton{
+    background-color: #005fa5;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-left: 20px;
+    padding-inline: 15px;
+  }
+  
+  .nbutton:hover {
+    background-color: #23506e;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }

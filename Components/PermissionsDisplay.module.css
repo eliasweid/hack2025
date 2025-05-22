@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .permissionList {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .permissionItem {
+    background-color: #e0f2fe;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    color: #0369a1;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  

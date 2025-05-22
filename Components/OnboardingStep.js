@@ -39,9 +39,6 @@ export default function OnboardingStep({
           ))}
         </ul>
       </div>
-
-      
-      
     </div>
   );
 }

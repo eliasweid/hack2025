@@ -100,18 +100,19 @@ const stepDataSix = {
 
 
 const stepDataSeven = {
-  title: 'Team och kultur',
-  description: 'Introduktion till teamet, samarbetssätt och företagskultur.',
+  title: 'Säkerhet och regelefterlevnad',
+  description: 'Lär dig om informationssäkerhet, sekretess och interna riktlinjer för regelefterlevnad.',
   progress: 10,
   subSteps: [
-    { label: 'Delta i introduktionsmöte med teamet', done: false },
-    { label: 'Gå på gemensam lunch eller fika', done: false },
-    { label: 'Läs om företagets värderingar', done: false },
-    { label: 'Följ med på ett standup-möte', done: false },
-    { label: 'Prata med din mentor eller buddy', done: false },
-    { label: 'Delta i en social aktivitet eller afterwork', done: false },
+    { label: 'Gör e-utbildning om informationssäkerhet', done: false },
+    { label: 'Läs företagets IT-policy', done: false },
+    { label: 'Bekanta dig med GDPR-riktlinjer', done: false },
+    { label: 'Genomgång av säker hantering av data', done: false },
+    { label: 'Skriv under sekretessavtal (NDA)', done: false },
+    { label: 'Testa säkerhetsinloggning och VPN', done: false },
   ],
 };
+
 
 
 

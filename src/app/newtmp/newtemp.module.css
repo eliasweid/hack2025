@@ -1,5 +1,5 @@
 .container {
-    max-width: 600px;
+    width: 60vw;
     margin: 40px auto;
     padding: 24px;
     background-color: #f8f9fa;
@@ -45,17 +45,18 @@
   }
   
   .submitButton {
-    background-color: #4caf50;
+    background-color: #005fa5;
     color: white;
     padding: 12px;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
+
   }
   
   .submitButton:hover {
-    background-color: #3e9f3e;
+    background-color: #23506e;
   }
   
 
@@ -66,17 +67,22 @@
   }
   
   .smallButton {
-    background-color: #0070f3;
-    color: white;
-    padding: 8px 14px;
+    background-color: #005fa5;
+    color: #fff;
+    padding: 12px;
     border: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
+    font-weight: 600;
+    border-radius: 80px;
+    min-width: 100px;
+    
+    padding-inline: 15px;
   }
   
   .smallButton:hover {
-    background-color: #005bb5;
+    background-color: #23506e;
   }
   
   .list {
@@ -91,4 +97,94 @@
     display: flex;
     justify-content: flex-start;
   }
+
+  .templateList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .templateList li {
+    padding: 4px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+
+  .subTaskWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    margin-top: 0.5rem;
+  }
+  .subTaskWrapper button {
+    background-color: #005fa5;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    width: 100px;
+    padding-inline: 15px;
+  }
+  
+  .taskButtonWrapper {
+    margin-top: 1rem;
+  }
+  
+  .taskPreview {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+  
+  .taskCard {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .taskCard h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .taskCard p {
+    margin: 0 0 0.5rem 0;
+    color: black;
+    font-size: 0.95rem;
+  }
+  
+  .taskCard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .taskCard ul li {
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.3rem;
+    color: black;
+    list-style: none;
+  }
+  
+  .taskCard ul li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    color: #888;
+    color: black;
+    list-style: none;
+  }
+  
   
