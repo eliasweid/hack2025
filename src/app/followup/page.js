@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function FollowUpPage() {
   const [surveyResults] = useState({
     employeeName: 'Elliot Storm',
-    department: 'IT',
+    department: 'HTA',
     startDate: '2025-04-01',
     surveyDate: '2025-05-15',
     results: {
