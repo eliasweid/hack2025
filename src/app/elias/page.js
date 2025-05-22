@@ -46,20 +46,93 @@ export default function elias() {
               { label: 'Ladda ner program', done: false },
               { label: 'Logga in i Jira', done: false },
             ],
-
-
-
       };
+
+      const stepDataT = {
+        title: 'Hitta på kontoret',
+        description: 'Navigation och kontorslayout.',
+        progress: 10,
+        subSteps: [
+          { label: 'Hitta till fika rummet', done: false },
+          { label: 'Säkerhetsgenomgång', done: false },
+          { label: 'Passerkort funkar', done: false },
+        ],
+  };
+
+  const stepDataF = {
+    title: 'Kultur och värderingar',
+    description: 'Företagskultur och värderingar.',
+    progress: 10,
+    subSteps: [
+      { label: 'Läs på intranätet', done: false },
+      { label: 'Gör utbildningar i MyDevelopment', done: false },
+      { label: 'Fika med kollegorna', done: false },
+    ],
+};
+
+const stepDataFive = {
+  title: 'Systemförståelse',
+  description: 'Systemförståelse och arbetsmetoder.',
+  progress: 10,
+  subSteps: [
+    { label: 'Läs på intranätet om interna system', done: false },
+    { label: 'Gör utbildningar i MyDevelopment', done: false },
+    { label: 'Delta i genomgång av systemflöden', done: false },
+    { label: 'Testa att logga in i de viktigaste systemen', done: false },
+    { label: 'Sammanfatta vad du lärt dig för teamledaren', done: false },
+    { label: 'Delta i workshop om arbetsmetodik', done: false },
+  ],
+};
+
+const stepDataSix = {
+  title: 'Verktyg i arbetet',
+  description: 'Verktyg och arbetsmetoder.',
+  progress: 10,
+  subSteps: [
+    { label: 'Installera och konfigurera arbetsverktyg', done: false },
+    { label: 'Gå igenom standardprogramvaror', done: false },
+    { label: 'Sätt upp arbetsmiljö (t.ex. IDE, Slack, Teams)', done: false },
+    { label: 'Delta i genomgång av versionshantering (Git)', done: false },
+    { label: 'Testa dokumentationsverktyg (Confluence etc)', done: false },
+    { label: 'Genomför en testuppgift med verktygen', done: false },
+  ],
+};
+
+
+const stepDataSeven = {
+  title: 'Team och kultur',
+  description: 'Introduktion till teamet, samarbetssätt och företagskultur.',
+  progress: 10,
+  subSteps: [
+    { label: 'Delta i introduktionsmöte med teamet', done: false },
+    { label: 'Gå på gemensam lunch eller fika', done: false },
+    { label: 'Läs om företagets värderingar', done: false },
+    { label: 'Följ med på ett standup-möte', done: false },
+    { label: 'Prata med din mentor eller buddy', done: false },
+    { label: 'Delta i en social aktivitet eller afterwork', done: false },
+  ],
+};
+
+
+
+
 
 
 
     return (
         <main>
             <Overview employee={employee} />   
-            <TitleText text = "Innan första dagen" />
+            <TitleText text = "Första dagen" />
+            <OnboardingStep {...stepDataTwo} />
             <OnboardingStep {...stepData} /> 
             <TitleText text = "Första veckan" />
-            <OnboardingStep {...stepDataTwo} />
+            <OnboardingStep {...stepDataT} />
+            <OnboardingStep {...stepDataF} />
+            <TitleText text = "Fortsatt Onboarding" />
+            <OnboardingStep {...stepDataFive} />
+            <OnboardingStep {...stepDataSix} />
+            <OnboardingStep {...stepDataSeven} />
+            
         </main>
 
   );

@@ -87,10 +87,13 @@ export default function NewEmployeeForm() {
             className={styles.inputField}
           >
             <option value="">Välj mall</option>
-            <option value="Introduktion">Introduktion</option>
-            <option value="Systemgenomgång">Systemgenomgång</option>
+            <option value="Introduktion">HTA Områdesinfo</option>
+            <option value="Systemgenomgång">Vi är Handelsbanken</option>
             <option value="Säkerhetsutbildning">Säkerhetsutbildning</option>
             <option value="Teamintro">Teamintro</option>
+            <option value="Teamintro">Java Standard</option>
+            <option value="Teamintro">Java Senior</option>
+            <option value="Teamintro">SHB extern</option>
           </select>
         </label>
 
