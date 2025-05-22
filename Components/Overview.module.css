@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+    flex-wrap: wrap;
+    color: black;
+  }
+  
+  .left {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .right {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+  }
+  
+  .name {
+    margin: 16px 0 8px;
+  }
+  
+  .progressBar {
+    background-color: #eee;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .progressText {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .stepList {
+    margin-top: 16px;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .stepList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  
+  .stepDot {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .stepPending .stepDot {
+    color: #aaa;
+  }
+  
+  .stepPending {
+    color: #555;
+  }
+  

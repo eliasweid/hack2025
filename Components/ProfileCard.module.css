@@ -1,0 +1,66 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 16px 24px;
+    border-radius: 12px;
+    cursor: pointer;            
+    transition: box-shadow 0.2s;
+    width: 60vw;
+    max-width: 1200px;
+    margin: 0px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  
+  }
+  
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .progressBar {
+    background-color: #ddd;
+    height: 16px;
+    width: 200px;         
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .percent {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  
+  
+  

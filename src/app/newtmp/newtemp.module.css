@@ -1,0 +1,94 @@
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .formLabel {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .inputField {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 4px;
+    background-color: #f7f3f3;
+    color: black;
+  }
+  
+  .checkbox {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    color: #444;
+  }
+  
+  .submitButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #3e9f3e;
+  }
+  
+
+  .buttonGroup {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .smallButton {
+    background-color: #0070f3;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .smallButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .list {
+    margin-top: 12px;
+    padding-left: 20px;
+    color: #444;
+  }
+  
+
+  .taskButtonWrapper {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  

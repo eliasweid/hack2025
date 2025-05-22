@@ -1,0 +1,56 @@
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: sans-serif;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #222;
+  }
+  
+  .intro {
+    margin-bottom: 24px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .card {
+    padding: 16px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    color: #222;
+  }
+  
+  .chartContainer {
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  
+  .summary {
+    background: #eef7ff;
+    padding: 16px;
+    border-left: 4px solid #4a90e2;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    color: #222;
+  }
+  
+  .comments {
+    margin-top: 16px;
+    background-color: #fff6e6;
+    padding: 16px;
+    border-left: 4px solid #ffa500;
+    border-radius: 8px;
+    color: #222;
+  }
+  
