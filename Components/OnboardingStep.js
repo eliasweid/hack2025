@@ -27,7 +27,7 @@ export default function OnboardingStep({
         <ul className={styles.subStepList}>
           {subSteps.map((step, i) => (
             <li key={i} className={styles.subStepItem}>
-              <label>
+              <label className={styles.checkbox}>
                 <input 
                   type="checkbox" 
                   checked={checked[i]} 

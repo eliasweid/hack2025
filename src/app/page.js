@@ -16,7 +16,7 @@ export default function Home() {
       <h1 className={styles.title}>Min personal</h1>
       <Link href="newemp" className={styles.nbutton}>Ny Onboarding</Link>
       </div>
-       <ProfileCard name="Elias Weid" progress={75} avatar = {_public.elias} />
+       <ProfileCard name="Elias Weid" progress={68} avatar = {_public.elias} />
        <ProfileCard name="Erik Stolpe" progress={43} avatar = {_public.erik}/>
        <ProfileCard name="Ella Bernsfelt" progress={90} avatar= {_public.ella}/>
        <ProfileCard name="Elliot Storm" progress={10} avatar = {_public.profile}/>

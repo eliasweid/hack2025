@@ -11,8 +11,8 @@ export default function ProfileCard({ name = "John Doe", progress = 75, avatar =
         <Image
           src={avatar}
           alt="Profilbild"
-          width={50}
-          height={50}
+          width={70}
+          height={70}
           className={styles.avatar}
         />
         <span className={styles.name}>{name}</span>

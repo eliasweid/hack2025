@@ -18,7 +18,8 @@
     display: flex;
     gap: 30px;
     flex: 2;
-    justify-content: center;
+    justify-content: left;
+
     
   }
   
@@ -26,7 +27,7 @@
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
     padding-bottom: 5px;
     padding-top: 5px;
   }
@@ -46,3 +47,11 @@
     object-fit: cover;
   }
   
+
+  .left{
+    display: flex;
+    gap: 50px;
+    flex: 2;
+    justify-content: left;
+    align-items: center;
+  }

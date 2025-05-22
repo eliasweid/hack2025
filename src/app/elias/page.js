@@ -11,11 +11,11 @@ import _public from '../../../public';
 export default function elias() {
     const employee = {
         name: 'Elias Weid',
-        role: 'Systemutvecklare',
-        startDate: '2024-08-01',
-        department: 'IT',
-        isConsultant: false,
-        progress: 60,
+        role: 'SAS-Utvecklare',
+        startDate: '2024-09-02',
+        department: 'HTIC',
+        isConsultant: true,
+        progress: 68,
         imageUrl: _public.elias,
         steps: [
             { label: 'Konto skapat', done: true },

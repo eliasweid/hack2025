@@ -6,7 +6,7 @@ import _public from '../public';
 export default function HeaderBoss() {
   return (
     <header className={styles.header}>
-      
+      <div className={styles.left}>
       <Link href="/">
       <div className={styles.logo}>
         <Image src={_public.logo} alt="Logotyp" width={300} height={33} />
@@ -19,7 +19,7 @@ export default function HeaderBoss() {
         <Link href="/templates">Mallar</Link>
         <Link href="/followup">Uppföljning</Link>
       </nav>
-
+      </div>
       
       <div className={styles.profile}>
         <Image
